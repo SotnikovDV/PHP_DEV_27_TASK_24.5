@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .headerbox {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 10vh;
+    box-shadow: rgb(0 0 0 / 0%) 0px 1px 3px;
+    width: 100%;
+    height: 80px;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+  }
+  .main-menu {
+  display: block;
+  border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 15px;
+  }
+  .menu-item {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  
+  main {
+    padding-top: 11vh;
+  }
+  main h1 {
+    text-align: center;
+  }
+  .row {
+    padding: 5px 20px;
+  }
+  .slogan {
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .contentbox {
+    float: left;
+    width: 75%;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .contentbox, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
