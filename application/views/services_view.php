@@ -2,10 +2,14 @@
 <p>
 <div style="width: 50%; margin: auto;">
     <ul>
-        <li>Ловко обмануть избирателей</li>
-        <li>Смухлевать результаты выборов</li>
-        <li>Настроить репресивный аппарат</li>
-        <li>Ограбить население</li>
-        <li>Оккупировать соседнюю страну</li>
+        <?php
+			// инициируем данные
+			$model = new Model_Services;
+			$data = $model->get_data();
+
+            foreach ($data as $row) {
+            echo '<li><a target="_blank" href="'.$row['link'].'">'.$row['id'].' '.$row['description'].'</a></li>';
+        }
+        ?>
     </ul>
 </div>
